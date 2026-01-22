@@ -8,45 +8,45 @@ const Certificates = () => {
       id: 1,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.07.32.png",
-      title: "Curso Básico de Git",
+      title: "Microservicios con Spring Cloud",
       institution: "TodoCode Academy",
-      date: "2024",
+      date: "19/07/2025",
       credential: "https://todocodeacademy.com/certificate/bg9/",
     },
     {
       id: 2,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.07.57.png",
-      title: "Spring Boot",
+      title: "Desarrollo de APIs en Java con Spring Boot",
       institution: "TodoCode Academy",
-      date: "2024",
+      date: "15/03/2025",
       credential: "https://todocodeacademy.com/certificate/spring-boot-ksw/",
     },
     {
       id: 3,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.09.15.png",
-      title: "Java para Principiantes",
+      title: "Introducción a las Bases de Datos Relacionales (MySQL)",
       institution: "TodoCode Academy",
-      date: "2024",
+      date: "03/12/2023",
       credential: "https://todocodeacademy.com/certificate/jjv/",
     },
     {
       id: 4,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.09.34.png",
-      title: "Curso de Kotlin",
+      title: "Java para Principiantes",
       institution: "TodoCode Academy",
-      date: "2024",
+      date: "30/11/2023",
       credential: "https://todocodeacademy.com/certificate/czk/",
     },
     {
       id: 5,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.10.13.png",
-      title: "Curso de Hibernate",
+      title: "Introducción a los Algoritmos y la Programación",
       institution: "TodoCode Academy",
-      date: "2024",
+      date: "01/07/2024",
       credential: "https://todocodeacademy.com/certificate/khe/",
     },
     {
