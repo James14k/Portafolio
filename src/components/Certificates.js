@@ -67,11 +67,13 @@ const Certificates = () => {
     },
     {
       id: 8,
-      image: "/img/certificates/aiep3.png",
-      title: "Diseño Web con HTML5 + CSS",
-      institution: "AIEP - Fundación Telefónica Movistar",
-      date: "10/10/2022",
-      credential: "",
+      image:
+        "https://production-egg-certificates.s3.amazonaws.com/HawkDurant/programacióncooperativa2/thumbnail_3cc3474aad9692f8ccc3c6f9c854c56b6eacdd7c7fdd4e05d034ceaf1242ea51.jpeg",
+      title: "Programación Cooperativa 2",
+      institution: "Egg Cooperation",
+      date: "2023",
+      credential:
+        "https://production-egg-certificates.s3.amazonaws.com/HawkDurant/programacióncooperativa2/thumbnail_3cc3474aad9692f8ccc3c6f9c854c56b6eacdd7c7fdd4e05d034ceaf1242ea51.jpeg",
     },
   ];
 
