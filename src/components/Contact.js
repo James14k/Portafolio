@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import useTranslation from '../i18n/useTranslation';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -43,7 +45,7 @@ const Contact = () => {
 
     // Validé básicamente
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setErrorMessage('Por favor completa todos los campos.');
+      setErrorMessage(t('contact.error_empty'));
       setShowError(true);
       setIsSubmitting(false);
       return;
@@ -52,7 +54,7 @@ const Contact = () => {
     // Validé el email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      setErrorMessage('Por favor ingresa un email válido.');
+      setErrorMessage(t('contact.error_email'));
       setShowError(true);
       setIsSubmitting(false);
       return;
@@ -63,7 +65,7 @@ const Contact = () => {
         SERVICE_ID === 'YOUR_SERVICE_ID' || 
         TEMPLATE_ID === 'YOUR_TEMPLATE_ID' || 
         PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
-      setErrorMessage('EmailJS no está configurado. Por favor configura las credenciales en el archivo .env');
+      setErrorMessage(t('contact.error_config'));
       setShowError(true);
       setIsSubmitting(false);
       return;
@@ -87,14 +89,12 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error al enviar el correo:', error);
-      let errorMsg = 'Error al enviar el mensaje. ';
+      let errorMsg = t('contact.error_generic');
       
       if (error.text) {
-        errorMsg += error.text;
+        errorMsg += ' ' + error.text;
       } else if (error.message) {
-        errorMsg += error.message;
-      } else {
-        errorMsg += 'Por favor verifica tu configuración de EmailJS o intenta más tarde.';
+        errorMsg += ' ' + error.message;
       }
       
       setErrorMessage(errorMsg);
@@ -109,9 +109,9 @@ const Contact = () => {
       <div className="container">
         <div className="position-relative d-flex align-items-center justify-content-center">
           <h1 className="display-1 text-uppercase text-white" style={{ WebkitTextStroke: '1px #dee2e6', fontSize: 'clamp(3rem, 10vw, 10rem)' }}>
-            Contacto
+            {t('contact.bg_title')}
           </h1>
-          <h1 className="position-absolute text-uppercase text-primary" style={{ fontSize: 'clamp(1.25rem, 3vw, 2.5rem)' }}>Contactame</h1>
+          <h1 className="position-absolute text-uppercase text-primary" style={{ fontSize: 'clamp(1.25rem, 3vw, 2.5rem)' }}>{t('contact.title')}</h1>
         </div>
         <div className="row justify-content-center">
           <div className="col-12 col-md-10 col-lg-8">
@@ -119,7 +119,7 @@ const Contact = () => {
               <div id="success">
                 {showSuccess && (
                   <div className="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Tu mensaje ha sido enviado.</strong>
+                    <strong>{t('contact.success_message')}</strong>
                     <button type="button" className="close" onClick={() => setShowSuccess(false)}>
                       <span>&times;</span>
                     </button>
@@ -127,7 +127,7 @@ const Contact = () => {
                 )}
                 {showError && (
                   <div className="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>{errorMessage || 'Por favor completa todos los campos correctamente.'}</strong>
+                    <strong>{errorMessage || t('contact.error_empty')}</strong>
                     <button type="button" className="close" onClick={() => setShowError(false)}>
                       <span>&times;</span>
                     </button>
@@ -142,7 +142,7 @@ const Contact = () => {
                       className="form-control p-4"
                       name="name"
                       id="name"
-                      placeholder="Nombre"
+                      placeholder={t('contact.name_placeholder')}
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -155,7 +155,7 @@ const Contact = () => {
                       className="form-control p-4"
                       name="email"
                       id="email"
-                      placeholder="Email"
+                      placeholder={t('contact.email_placeholder')}
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -169,7 +169,7 @@ const Contact = () => {
                     className="form-control p-4"
                     name="subject"
                     id="subject"
-                    placeholder="Asunto"
+                    placeholder={t('contact.subject_placeholder')}
                     value={formData.subject}
                     onChange={handleChange}
                     required
@@ -182,7 +182,7 @@ const Contact = () => {
                     rows="5"
                     name="message"
                     id="message"
-                    placeholder="Mensaje"
+                    placeholder={t('contact.message_placeholder')}
                     value={formData.message}
                     onChange={handleChange}
                     required
@@ -191,7 +191,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <button className="btn btn-outline-primary" type="submit" id="sendMessageButton" disabled={isSubmitting}>
-                    {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
+                    {isSubmitting ? t('contact.sending') : t('contact.send_button')}
                   </button>
                 </div>
               </form>
@@ -204,4 +204,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

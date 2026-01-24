@@ -22,9 +22,11 @@ import {
   FaCoffee,
 } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
+import useTranslation from "../i18n/useTranslation";
 
 const Skills = () => {
   const { isDarkMode } = useTheme();
+  const { t } = useTranslation();
 
   const skills = [
     { name: "HTML", icon: <SiHtml5 color="#E34F26" /> },
@@ -65,13 +67,13 @@ const Skills = () => {
               fontSize: "clamp(3rem, 10vw, 10rem)",
             }}
           >
-            Habilidades
+            {t("skills.bg_title")}
           </h1>
           <h1
             className="position-absolute text-uppercase text-primary"
             style={{ fontSize: "clamp(1.25rem, 3vw, 2.5rem)" }}
           >
-            Habilidades Destacadas
+            {t("skills.title")}
           </h1>
         </div>
         <div className="row align-items-center">

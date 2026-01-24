@@ -1,19 +1,21 @@
 /* ===== VARIABLES DE TEMA ===== */
 :root {
-  /* Modo Claro (por defecto) */
+  /* Modo Claro (por defecto) - Colores mejorados */
   --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
+  --bg-secondary: #f5f7fa;
   --bg-card: #ffffff;
-  --text-primary: #343a40;
-  --text-secondary: #6c757d;
-  --text-muted: #adb5bd;
-  --border-color: #dee2e6;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --navbar-bg: #f8f9fa;
+  --text-primary: #1a1a2e;
+  --text-secondary: #2d3748;
+  --text-muted: #718096;
+  --text-heading: #1a202c;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --navbar-bg: #ffffff;
   --modal-bg: #ffffff;
   --input-bg: #ffffff;
-  --input-border: #ced4da;
+  --input-border: #cbd5e0;
   --accent-color: #00a896;
+  --accent-hover: #008f7f;
 }
 
 /* Modo Oscuro */
@@ -24,6 +26,7 @@ body.dark-mode {
   --text-primary: #f0f0f0;
   --text-secondary: #d1d1d1;
   --text-muted: #a0a0a0;
+  --text-heading: #ffffff;
   --border-color: #3a3b3c;
   --shadow-color: rgba(0, 0, 0, 0.3);
   --navbar-bg: #16213e;
@@ -31,6 +34,7 @@ body.dark-mode {
   --input-bg: #2d3748;
   --input-border: #4a5568;
   --accent-color: #00d4aa;
+  --accent-hover: #00e6b8;
 }
 
 /* ===== ESTILOS GENERALES ===== */
@@ -41,6 +45,89 @@ body {
     background-color 0.3s ease,
     color 0.3s ease;
 }
+
+/* ===== MODO CLARO - ESTILOS ESPECÍFICOS ===== */
+
+/* Textos en modo claro */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+}
+
+p, span, li {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Títulos de sección decorativos (fondo) - MODO CLARO */
+.display-1.text-uppercase.text-white {
+  -webkit-text-stroke: 2px #d1d5db !important;
+  color: #f3f4f6 !important;
+  opacity: 0.8;
+}
+
+/* Títulos principales de las secciones */
+.position-absolute.text-uppercase.text-primary {
+  color: var(--accent-color) !important;
+  text-shadow: none;
+}
+
+/* Subtítulos y descripciones */
+.font-weight-bold {
+  color: var(--text-heading);
+}
+
+/* Cards y elementos */
+.bg-light {
+  background-color: var(--bg-secondary) !important;
+}
+
+.bg-white {
+  background-color: var(--bg-card) !important;
+}
+
+/* Bordes */
+.border-left.border-primary {
+  border-left-color: var(--accent-color) !important;
+}
+
+/* Formularios */
+.form-control {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 168, 150, 0.15);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+/* Modal */
+.modal-content {
+  background-color: var(--modal-bg);
+  border-color: var(--border-color);
+}
+
+.modal-header {
+  border-bottom-color: var(--border-color);
+}
+
+.modal-title {
+  color: var(--text-heading);
+}
+
+.modal-body p.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* ===== MODO OSCURO - ESTILOS ESPECÍFICOS ===== */
 
 /* Navbar */
 body.dark-mode .navbar {
@@ -79,6 +166,7 @@ body.dark-mode #qualification,
 body.dark-mode #skill,
 body.dark-mode #service,
 body.dark-mode #portfolio,
+body.dark-mode #certificates,
 body.dark-mode #testimonial,
 body.dark-mode #blog,
 body.dark-mode #contact {
@@ -103,6 +191,10 @@ body.dark-mode li {
 
 body.dark-mode .text-secondary {
   color: var(--text-secondary) !important;
+}
+
+body.dark-mode .text-muted {
+  color: var(--text-muted) !important;
 }
 
 /* Cards y elementos con fondo */
@@ -146,6 +238,10 @@ body.dark-mode .modal-title {
   color: var(--text-primary);
 }
 
+body.dark-mode .modal-body p.text-muted {
+  color: var(--text-secondary) !important;
+}
+
 /* Formularios */
 body.dark-mode .form-control {
   background-color: var(--input-bg);
@@ -184,9 +280,11 @@ body.dark-mode .btn-outline-dark:hover {
   color: var(--bg-primary);
 }
 
-/* Líneas decorativas */
-body.dark-mode .display-1 {
-  -webkit-text-stroke: 1px var(--border-color) !important;
+/* Títulos decorativos de fondo - MODO OSCURO */
+body.dark-mode .display-1.text-uppercase.text-white {
+  -webkit-text-stroke: 1px #4a5568 !important;
+  color: #2d3748 !important;
+  opacity: 0.6;
 }
 
 /* Progress bars */
@@ -197,6 +295,10 @@ body.dark-mode .progress {
 /* Timeline / Qualification */
 body.dark-mode .border-left {
   border-left-color: var(--border-color) !important;
+}
+
+body.dark-mode .border-left.border-primary {
+  border-left-color: #00d4aa !important;
 }
 
 /* Portfolio items */
@@ -210,21 +312,64 @@ body.dark-mode .badge-light {
   color: var(--text-primary);
 }
 
-/* Footer */
-body.dark-mode footer,
-body.dark-mode .bg-primary {
+body.dark-mode .badge-primary {
+  background-color: #00d4aa;
+}
+
+/* Footer - mantener colores originales */
+footer.bg-primary,
+.container-fluid.bg-primary {
   background-color: #00a896 !important;
 }
 
-body.dark-mode footer p,
-body.dark-mode footer a,
-body.dark-mode footer strong {
+footer p,
+footer a,
+footer strong,
+.bg-primary.text-white p,
+.bg-primary.text-white a,
+.bg-primary.text-white strong {
   color: #ffffff !important;
 }
 
-body.dark-mode .bg-primary.text-white p,
-body.dark-mode .bg-primary.text-white strong {
+/* Botones sociales del footer */
+.btn-social {
+  width: 40px;
+  height: 40px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+.btn-social i {
+  color: #00a896 !important;
+  font-size: 1.2rem;
+}
+
+.btn-social:hover {
+  background-color: #1a1a2e !important;
+}
+
+.btn-social:hover i {
   color: #ffffff !important;
+}
+
+body.dark-mode .btn-social {
+  background-color: #ffffff !important;
+}
+
+body.dark-mode .btn-social i {
+  color: #00a896 !important;
+}
+
+body.dark-mode .btn-social:hover {
+  background-color: #1a1a2e !important;
+}
+
+body.dark-mode .btn-social:hover i {
+  color: #00d4aa !important;
 }
 
 /* Scroll to top button */
@@ -239,7 +384,117 @@ body.dark-mode .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem var(--shadow-color) !important;
 }
 
-/* ===== BOTÓN DE CAMBIO DE TEMA ===== */
+/* ===== ESTILOS ADICIONALES PARA MEJOR LEGIBILIDAD ===== */
+
+/* Sección About */
+#about p,
+#about .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Sección Qualification */
+#qualification h5.font-weight-bold {
+  color: var(--text-heading);
+}
+
+#qualification p {
+  color: var(--text-secondary);
+}
+
+#qualification small {
+  color: var(--text-muted);
+}
+
+body.dark-mode #qualification h5.font-weight-bold {
+  color: var(--text-primary);
+}
+
+/* Sección Services */
+#service h4,
+#service h5 {
+  color: var(--text-heading);
+}
+
+#service p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode #service h4,
+body.dark-mode #service h5 {
+  color: var(--text-primary);
+}
+
+/* Sección Blog */
+#blog h5 {
+  color: var(--text-heading);
+}
+
+#blog p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode #blog h5 {
+  color: var(--text-primary);
+}
+
+/* Sección Contact */
+#contact .alert {
+  color: inherit;
+}
+
+/* Skills section */
+#skill h6 {
+  color: var(--text-heading);
+}
+
+body.dark-mode #skill h6 {
+  color: var(--text-primary);
+}
+
+/* Certificates */
+#certificates p {
+  color: var(--text-secondary);
+}
+
+/* ===== NAVBAR EN MODO CLARO ===== */
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-secondary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--accent-color);
+}
+
+.navbar-brand h1 span {
+  color: var(--accent-color);
+}
+
+/* Select del idioma */
+.navbar select.form-control {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+body.dark-mode .navbar select.form-control {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-primary);
+}
+
+/* Botón de tema en navbar */
+.navbar .btn-outline-primary {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ===== BOTÓN DE CAMBIO DE TEMA (si se usa flotante) ===== */
 .theme-toggle {
   position: fixed;
   top: 100px;
@@ -283,4 +538,15 @@ body.dark-mode .shadow-sm {
 
 .theme-toggle:hover i {
   transform: rotate(30deg);
+}
+
+/* ===== MEJORAS RESPONSIVE ===== */
+@media (max-width: 767.98px) {
+  h1, h2, h3 {
+    color: var(--text-heading);
+  }
+  
+  p {
+    color: var(--text-secondary);
+  }
 }

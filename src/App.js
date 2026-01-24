@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "./context/ThemeContext";
+import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -13,29 +14,29 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import ThemeToggle from "./components/ThemeToggle";
 import "./styles/theme.css";
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className="App">
-        <Navbar />
-        <ThemeToggle />
-        <Header />
-        <About />
-        <Qualification />
-        <Skills />
-        <Services />
-        <Portfolio />
-        <Certificates />
-        {/* <Testimonial /> */}
-        <Blog />
-        <Contact />
-        <Footer />
-        <ScrollToTop />
-      </div>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <div className="App">
+          <Navbar />
+          <Header />
+          <About />
+          <Qualification />
+          <Skills />
+          <Services />
+          <Portfolio />
+          <Certificates />
+          {/* <Testimonial /> */}
+          <Blog />
+          <Contact />
+          <Footer />
+          <ScrollToTop />
+        </div>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
 

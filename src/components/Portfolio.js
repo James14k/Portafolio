@@ -1,19 +1,19 @@
 import React, { useState } from "react";
+import useTranslation from "../i18n/useTranslation";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   const [filter, setFilter] = useState("*");
   const [selectedProject, setSelectedProject] = useState(null);
 
   const portfolioItems = [
-    // Proyectos Web
     {
       id: 1,
       image: "/img/tucredito.png",
       category: "first",
-      title: "TuCrédito",
-      description:
-        "Sistema de gestión de créditos que permite administrar préstamos, pagos y clientes de manera eficiente.",
-      technologies: ["React", "Node.js", "MySQL", "Bootstrap"],
+      title: t("portfolio.1.title"),
+      description: t("portfolio.1.description"),
+      technologies: [t("portfolio.1.tech1"), t("portfolio.1.tech2"), t("portfolio.1.tech3"), t("portfolio.1.tech4")],
       github: "https://github.com/James14k/Gestion_de_credito",
       website: "https://example.com",
     },
@@ -21,10 +21,9 @@ const Portfolio = () => {
       id: 2,
       image: "/img/Zona_fit.png",
       category: "first",
-      title: "Zona Fit",
-      description:
-        "Plataforma web para gimnasios con gestión de membresías, rutinas de entrenamiento y seguimiento de progreso.",
-      technologies: ["React", "CSS3", "Firebase"],
+      title: t("portfolio.2.title"),
+      description: t("portfolio.2.description"),
+      technologies: [t("portfolio.2.tech1"), t("portfolio.2.tech2"), t("portfolio.2.tech3")],
       github: "https://github.com/James14k/James14k-Zona_fit",
       website: "https://example.com",
     },
@@ -32,10 +31,9 @@ const Portfolio = () => {
       id: 3,
       image: "/img/chatApp.png",
       category: "first",
-      title: "Chat App",
-      description:
-        "Aplicación de mensajería en tiempo real con soporte para conversaciones individuales y grupales.",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
+      title: t("portfolio.3.title"),
+      description: t("portfolio.3.description"),
+      technologies: [t("portfolio.3.tech1"), t("portfolio.3.tech2"), t("portfolio.3.tech3"), t("portfolio.3.tech4")],
       github: "https://github.com/James14k/chat-app",
       website: "https://example.com",
     },
@@ -43,10 +41,9 @@ const Portfolio = () => {
       id: 4,
       image: "/img/peluqueria_canina.png",
       category: "first",
-      title: "Peluquería Canina",
-      description:
-        "Sistema de gestión para peluquerías caninas con reservas, historial de mascotas y facturación.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Thymeleaf"],
+      title: t("portfolio.4.title"),
+      description: t("portfolio.4.description"),
+      technologies: [t("portfolio.4.tech1"), t("portfolio.4.tech2"), t("portfolio.4.tech3"), t("portfolio.4.tech4")],
       github: "https://github.com/James14k/Peluqueria-Canina-Java",
       website: "https://example.com",
     },
@@ -54,9 +51,8 @@ const Portfolio = () => {
       id: 5,
       image: "/img/PypTech.png",
       category: "first",
-      title: "PypTech",
-      description:
-        "Sitio web corporativo para empresa de tecnología con catálogo de servicios y portafolio de proyectos.",
+      title: t("portfolio.5.title"),
+      description: t("portfolio.5.description"),
       technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       github: "",
       website: "https://example.com",
@@ -65,9 +61,8 @@ const Portfolio = () => {
       id: 6,
       image: "/img/HuertoHogar_Web.png",
       category: "first",
-      title: "HuertoHogar Web",
-      description:
-        "Plataforma educativa sobre cultivo en casa con guías, consejos y seguimiento de plantas.",
+      title: t("portfolio.6.title"),
+      description: t("portfolio.6.description"),
       technologies: ["React", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/James14k/Huerto-Hogar-React",
       website: "https://example.com",
@@ -76,9 +71,8 @@ const Portfolio = () => {
       id: 7,
       image: "/img/Lashifield_web.png",
       category: "first",
-      title: "Lashifield Web",
-      description:
-        "Sitio web para salón de belleza especializado en extensiones de pestañas y servicios estéticos.",
+      title: t("portfolio.7.title"),
+      description: t("portfolio.7.description"),
       technologies: ["HTML5", "CSS3", "JavaScript", "PHP"],
       github: "",
       website: "https://example.com",
@@ -87,9 +81,8 @@ const Portfolio = () => {
       id: 8,
       image: "/img/misterr_pastel.png",
       category: "first",
-      title: "Misterr Pastel",
-      description:
-        "E-commerce de pastelería con catálogo de productos, carrito de compras y gestión de pedidos.",
+      title: t("portfolio.8.title"),
+      description: t("portfolio.8.description"),
       technologies: ["React", "Redux", "Node.js", "PostgreSQL"],
       github: "https://github.com/James14k/Mr-Pastel-React",
       website: "https://example.com",
@@ -98,9 +91,8 @@ const Portfolio = () => {
       id: 9,
       image: "/img/pastel_milsabores.png",
       category: "first",
-      title: "Pastelería Mil Sabores",
-      description:
-        "Sitio web para pastelería con galería de productos, pedidos personalizados y reservas online.",
+      title: t("portfolio.9.title"),
+      description: t("portfolio.9.description"),
       technologies: ["React", "CSS3", "Firebase", "Stripe"],
       github: "https://github.com/James14k/Pasteleria-Mil-Sabores",
       website: "https://example.com",
@@ -110,9 +102,8 @@ const Portfolio = () => {
       id: 10,
       image: "/img/Mr_Pastel_app.png",
       category: "second",
-      title: "Mr Pastel App",
-      description:
-        "Aplicación móvil de pastelería para realizar pedidos, ver catálogo y recibir notificaciones de ofertas.",
+      title: t("portfolio.10.title"),
+      description: t("portfolio.10.description"),
       technologies: ["React Native", "Expo", "Firebase", "Redux"],
       github: "https://github.com/James14k/Mr-Pastel",
       website: "https://example.com",
@@ -121,9 +112,8 @@ const Portfolio = () => {
       id: 11,
       image: "/img/levelUp_app.png",
       category: "second",
-      title: "LevelUp App",
-      description:
-        "Aplicación de gamificación para productividad personal con sistema de logros y seguimiento de hábitos.",
+      title: t("portfolio.11.title"),
+      description: t("portfolio.11.description"),
       technologies: ["React Native", "TypeScript", "Node.js", "MongoDB"],
       github: "https://github.com/James14k/level-up",
       website: "https://example.com",
@@ -144,7 +134,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container-fluid pt-5 pb-3" id="portfolio">
+    <div className="container-fluid pt-5" id="portfolio">
       <div className="container">
         <div className="position-relative d-flex align-items-center justify-content-center">
           <h1
@@ -154,13 +144,13 @@ const Portfolio = () => {
               fontSize: "clamp(3rem, 10vw, 10rem)",
             }}
           >
-            Galería
+            {t("portfolio.bg_title")}
           </h1>
           <h1
             className="position-absolute text-uppercase text-primary"
             style={{ fontSize: "clamp(1.25rem, 3vw, 2.5rem)" }}
           >
-            Mis Proyectos
+            {t("portfolio.title")}
           </h1>
         </div>
         <div className="row">
@@ -178,19 +168,19 @@ const Portfolio = () => {
                 className={`btn btn-sm btn-outline-primary m-1 ${filter === "*" ? "active" : ""}`}
                 onClick={() => setFilter("*")}
               >
-                Todos
+                {t("portfolio.filter_all")}
               </li>
               <li
                 className={`btn btn-sm btn-outline-primary m-1 ${filter === "first" ? "active" : ""}`}
                 onClick={() => setFilter("first")}
               >
-                Web
+                {t("portfolio.filter_web")}
               </li>
               <li
                 className={`btn btn-sm btn-outline-primary m-1 ${filter === "second" ? "active" : ""}`}
                 onClick={() => setFilter("second")}
               >
-                Móvil
+                {t("portfolio.filter_mobile")}
               </li>
             </ul>
           </div>
@@ -280,7 +270,7 @@ const Portfolio = () => {
                     onClick={(e) => e.stopPropagation()}
                   >
                     <i className="fab fa-github mr-2"></i>
-                    Ver en GitHub
+                    {t("portfolio.view_github")}
                   </a>
                   <a
                     href={selectedProject.website}
@@ -290,7 +280,7 @@ const Portfolio = () => {
                     onClick={(e) => e.stopPropagation()}
                   >
                     <i className="fa fa-globe mr-2"></i>
-                    Ver Sitio Web
+                    {t("portfolio.view_website")}
                   </a>
                 </div>
               </div>

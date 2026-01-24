@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import useTranslation from "../i18n/useTranslation";
 
 const Certificates = () => {
+  const { t } = useTranslation();
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   const certificates = [
@@ -8,72 +10,80 @@ const Certificates = () => {
       id: 1,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.07.32.png",
-      title: "Microservicios con Spring Cloud",
-      institution: "TodoCode Academy",
-      date: "19/07/2025",
+      title: t("certificates.1.title"),
+      institution: t("certificates.1.institution"),
+      date: t("certificates.1.date"),
       credential: "https://todocodeacademy.com/certificate/bg9/",
     },
     {
       id: 2,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.07.57.png",
-      title: "Desarrollo de APIs en Java con Spring Boot",
-      institution: "TodoCode Academy",
-      date: "15/03/2025",
+      title: t("certificates.2.title"),
+      institution: t("certificates.2.institution"),
+      date: t("certificates.2.date"),
       credential: "https://todocodeacademy.com/certificate/spring-boot-ksw/",
     },
     {
       id: 3,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.09.15.png",
-      title: "Introducción a las Bases de Datos Relacionales (MySQL)",
-      institution: "TodoCode Academy",
-      date: "03/12/2023",
+      title: t("certificates.3.title"),
+      institution: t("certificates.3.institution"),
+      date: t("certificates.3.date"),
       credential: "https://todocodeacademy.com/certificate/jjv/",
     },
     {
       id: 4,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.09.34.png",
-      title: "Java para Principiantes",
-      institution: "TodoCode Academy",
-      date: "30/11/2023",
+      title: t("certificates.4.title"),
+      institution: t("certificates.4.institution"),
+      date: t("certificates.4.date"),
       credential: "https://todocodeacademy.com/certificate/czk/",
     },
     {
       id: 5,
       image:
         "/img/certificates/Captura de pantalla 2026-01-21 a la(s) 20.10.13.png",
-      title: "Introducción a los Algoritmos y la Programación",
-      institution: "TodoCode Academy",
-      date: "01/07/2024",
+      title: t("certificates.5.title"),
+      institution: t("certificates.5.institution"),
+      date: t("certificates.5.date"),
       credential: "https://todocodeacademy.com/certificate/khe/",
     },
     {
       id: 6,
       image: "/img/certificates/aiep1.png",
-      title: "Diseño Web con HTML5 + CSS",
-      institution: "AIEP - Fundación Telefónica Movistar",
-      date: "10/10/2022",
+      title: t("certificates.6.title"),
+      institution: t("certificates.6.institution"),
+      date: t("certificates.6.date"),
       credential: "",
     },
     {
       id: 7,
       image: "/img/certificates/aiep2.png",
-      title: "Aprende WordPress de forma sencilla",
-      institution: "AIEP - Fundación Telefónica Movistar",
-      date: "09/10/2022",
+      title: t("certificates.7.title"),
+      institution: t("certificates.7.institution"),
+      date: t("certificates.7.date"),
       credential: "",
     },
     {
       id: 8,
       image:
         "https://production-egg-certificates.s3.amazonaws.com/HawkDurant/programacióncooperativa2/thumbnail_3cc3474aad9692f8ccc3c6f9c854c56b6eacdd7c7fdd4e05d034ceaf1242ea51.jpeg",
-      title: "Programación Cooperativa 2",
-      institution: "Egg Cooperation",
-      date: "2023",
+      title: t("certificates.8.title"),
+      institution: t("certificates.8.institution"),
+      date: t("certificates.8.date"),
       credential:
         "https://production-egg-certificates.s3.amazonaws.com/HawkDurant/programacióncooperativa2/thumbnail_3cc3474aad9692f8ccc3c6f9c854c56b6eacdd7c7fdd4e05d034ceaf1242ea51.jpeg",
+    },
+    {
+      id: 9,
+      image: "/img/certificates/cestificado_modulo.jpeg",
+      title: t("certificates.9.title"),
+      institution: t("certificates.9.institution"),
+      date: t("certificates.9.date"),
+      credential: "",
     },
   ];
 
@@ -96,13 +106,13 @@ const Certificates = () => {
               fontSize: "clamp(3rem, 10vw, 10rem)",
             }}
           >
-            Logros
+            {t("certificates.bg_title")}
           </h1>
           <h1
             className="position-absolute text-uppercase text-primary"
             style={{ fontSize: "clamp(1.25rem, 3vw, 2.5rem)" }}
           >
-            Mis Certificados
+            {t("certificates.title")}
           </h1>
         </div>
         <div className="row">
@@ -184,11 +194,11 @@ const Certificates = () => {
                   }}
                 />
                 <p className="mb-1">
-                  <strong>Institución:</strong>{" "}
+                  <strong>{t("certificates.institution_label")}:</strong>{" "}
                   {selectedCertificate.institution}
                 </p>
                 <p className="mb-3">
-                  <strong>Fecha:</strong> {selectedCertificate.date}
+                  <strong>{t("certificates.date_label")}:</strong> {selectedCertificate.date}
                 </p>
                 {selectedCertificate.credential && (
                   <a
@@ -199,7 +209,7 @@ const Certificates = () => {
                     onClick={(e) => e.stopPropagation()}
                   >
                     <i className="fa fa-external-link-alt mr-2"></i>
-                    Ver Credencial
+                    {t("certificates.view_credential")}
                   </a>
                 )}
               </div>

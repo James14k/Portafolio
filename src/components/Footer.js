@@ -1,6 +1,8 @@
 import React from "react";
+import useTranslation from "../i18n/useTranslation";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="container-fluid bg-primary text-white py-4 px-sm-3 px-md-5">
       <div className="container text-center">
@@ -23,8 +25,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="m-0" style={{ fontSize: "clamp(0.875rem, 2vw, 1rem)" }}>
-          &copy; {new Date().getFullYear()} Desarrollado con ❤️ por{" "}
-          <strong>Hawk Durant</strong>
+          {t("footer.copyright", { year: new Date().getFullYear() })}
         </p>
       </div>
     </div>

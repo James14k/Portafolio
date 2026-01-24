@@ -1,7 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import useTranslation from "../i18n/useTranslation";
 
 const About = () => {
+  const { t } = useTranslation();
   const scrollToContact = (e) => {
     e.preventDefault();
     const element = document.getElementById("contact");
@@ -25,13 +27,13 @@ const About = () => {
               fontSize: "clamp(3rem, 10vw, 10rem)",
             }}
           >
-            Acerca
+            {t("about.bg_title")}
           </h1>
           <h1
             className="position-absolute text-uppercase text-primary"
             style={{ fontSize: "clamp(1.5rem, 4vw, 3rem)" }}
           >
-            De mi
+            {t("about.title")}
           </h1>
         </div>
         <div className="row align-items-center">
@@ -51,21 +53,15 @@ const About = () => {
             />
           </div>
           <div className="col-12 col-lg-7 text-center text-lg-left">
-            <h3 className="mb-4">Ingeniero informático</h3>
-            <p>
-              Con mención en desarrollo de software. Especialista en el
-              ecosistema Java, Spring Boot y Kotlin. Experto en la
-              implementación de arquitecturas monolíticas, MVC y microservicios,
-              con un fuerte enfoque en testing (JUnit, MockK), Docker y buenas
-              prácticas de desarrollo.
-            </p>
+            <h3 className="mb-4">{t("about.profession")}</h3>
+            <p>{t("about.description")}</p>
             <div className="mt-4 d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start">
               <a
                 href="#contact"
                 className="btn btn-outline-primary mr-sm-4 mb-3 mb-sm-0"
                 onClick={scrollToContact}
               >
-                Contratame
+                {t("about.hire_me")}
               </a>
               <a
                 href="https://www.github.com/james14k"

@@ -1,0 +1,269 @@
+{
+  "header": {
+    "name": "Hawk Durant",
+    "title": "Ingeniero Informático",
+    "description": "Especialista en desarrollo de software con enfoque en arquitecturas modernas y microservicios, comprometido con la implementación de buenas prácticas y la entrega de código de alta calidad."
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "qualification": "Formación",
+    "skills": "Habilidades",
+    "services": "Servicios",
+    "portfolio": "Proyectos",
+    "certificates": "Certificados",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "download_cv": "Descargar CV"
+  },
+  "cv_link": "https://drive.google.com/file/d/1WrwpozEav_SlekGQ3pk9U8L0fbOHY2IH/view?usp=drive_link",
+  "about": {
+    "bg_title": "Acerca",
+    "title": "De mí",
+    "profession": "Ingeniero informático",
+    "description": "Con mención en desarrollo de software. Especialista en el ecosistema Java, Spring Boot y Kotlin. Experto en la implementación de arquitecturas monolíticas, MVC y microservicios, con un fuerte enfoque en testing (JUnit, MockK), Docker y buenas prácticas de desarrollo.",
+    "hire_me": "Contrátame"
+  },
+  "skills": {
+    "bg_title": "Habilidades",
+    "title": "Habilidades Destacadas"
+  },
+  "services": {
+    "bg_title": "Servicios",
+    "title": "Mis Servicios",
+    "web_design": {
+      "title": "Diseño Web",
+      "description": "Primero lo primero. Diseño responsive. Prueba de navegador. Depuración completa. Tareas específicas y claras con el Equipo."
+    },
+    "web_dev": {
+      "title": "Desarrollo Web",
+      "description": "Desarrollos ágiles. Scrum. Siempre las últimas tecnologías. Siempre pensando en el costo computacional. Servidores totalmente gestionados por nosotros."
+    },
+    "architecture": {
+      "title": "Arquitectura Web",
+      "description": "Diseño y estructuración de componentes de aplicación web, para su funcionamiento de manera eficiente, escalable y segura. Definición de las interacciones del cliente, servidor y otros servicios involucrados."
+    },
+    "automation": {
+      "title": "Automatizaciones",
+      "description": "Optimización de procesos repetitivos mediante scripts y herramientas automatizadas. Integración de sistemas, flujos de trabajo automatizados y reducción de tareas manuales para mayor eficiencia."
+    }
+  },
+  "qualification": {
+    "bg_title": "Calidad",
+    "title": "Educación & Experiencias",
+    "education_title": "Formación académica",
+    "experience_title": "Proyectos Personales",
+    "education": {
+      "1": {
+        "title": "Ingeniero en Informática",
+        "institution": "Universidad Tecnológica de Chile INACAP",
+        "period": "2019 - 2024"
+      },
+      "2": {
+        "title": "Técnico en Programación y Analisis de Sistemas",
+        "institution": "Universidad Tecnológica de Chile INACAP",
+        "period": "2019 - 2022"
+      },
+      "3": {
+        "title": "Técnico en Programación Computacional",
+        "institution": "Instituto Profesional AIEP",
+        "period": "2016 - 2018"
+      },
+      "4": {
+        "title": "Educación Media Científico Humanista",
+        "institution": "Liceo Bicentenario de Talagante",
+        "period": "2012 - 2015"
+      }
+    },
+    "experience": {
+      "1": {
+        "position": "TuCrédito - Sistema de Préstamos",
+        "period": "Java 17 · Spring Boot 3.5 · React 18 · MySQL",
+        "description": "Arquitectura de 3 capas con patrones Repository, Service Layer y DTO. Implementé autenticación JWT con Spring Security, 3 sistemas de amortización (Personal, Francés, Alemán), dashboard con KPIs en tiempo real usando Chart.js, y almacenamiento de documentos con MinIO. Desafío: Gestionar cálculos financieros complejos. Lección: Importancia de la separación de responsabilidades."
+      },
+      "2": {
+        "position": "Zona Fit - Gestión de Gimnasio",
+        "period": "Java 21 · Spring Boot 4.0 · JPA · MySQL",
+        "description": "Aplicación de escritorio con Swing UI y tema FlatLaf Darcula. CRUD completo con validación de membresías únicas. Integración de Spring Data JPA para persistencia. Desafío: Sincronizar estado de UI con base de datos. Lección: Ventajas de usar ORM vs JDBC puro para mantenibilidad."
+      },
+      "3": {
+        "position": "Chat App - Mensajería en Tiempo Real",
+        "period": "Java · Spring WebSocket · Thymeleaf · H2",
+        "description": "Comunicación bidireccional con Spring WebSocket y StompJS. Sistema de presencia con notificaciones automáticas de entrada/salida. Arquitectura basada en eventos para escalabilidad. Desafío: Manejar concurrencia de múltiples usuarios. Lección: Protocolos WebSocket vs polling tradicional."
+      },
+      "4": {
+        "position": "Peluquería Canina - Sistema de Gestión",
+        "period": "Java · Swing · JPA · MySQL",
+        "description": "Autocompletado inteligente con Timer y JPopupMenu. Prevención de duplicados mediante queries con TRIM() y UPPER(). Gestión sofisticada de relaciones dueño-mascota con patrones DAO y Observer. Desafío: Casos edge en cambios de propietario. Lección: Importancia de validación robusta y UX intuitiva."
+      },
+      "5": {
+        "position": "Sistema Bancario Digital - API REST",
+        "period": "Java 17 · Spring Boot 3.5 · Spring Security · MySQL",
+        "description": "Arquitectura Hexagonal (Ports & Adapters) con DDD. Implementé Value Objects inmutables (ClienteId, CuentaId, Dinero, Moneda), autenticación JWT, rate limiting con Bucket4j, generación de extractos PDF con OpenPDF, y soporte multi-moneda con tasas de cambio. Swagger/OpenAPI para documentación. Desafío: Modelar dominio bancario complejo con reglas de negocio estrictas. Lección: Valor de DDD para dominios complejos."
+      }
+    }
+  },
+  "portfolio": {
+    "bg_title": "Proyectos",
+    "title": "Mi Portafolio",
+    "filter_all": "Todos",
+    "filter_web": "Web",
+    "filter_mobile": "Móvil",
+    "view_github": "Ver en GitHub",
+    "view_website": "Ver Sitio Web",
+    "1": {
+      "title": "Gestión de Créditos",
+      "description": "Sistema completo para gestión de créditos con panel administrativo, reportes y seguimiento de pagos.",
+      "tech1": "Java",
+      "tech2": "Spring Boot",
+      "tech3": "Thymeleaf",
+      "tech4": "MySQL"
+    },
+    "2": {
+      "title": "Zona Fit",
+      "description": "Aplicación de gestión para gimnasios con control de membresías, rutinas y seguimiento de clientes.",
+      "tech1": "Java",
+      "tech2": "Spring Boot",
+      "tech3": "PostgreSQL"
+    },
+    "3": {
+      "title": "Chat App",
+      "description": "Aplicación de mensajería en tiempo real con salas de chat, notificaciones y autenticación de usuarios.",
+      "tech1": "React",
+      "tech2": "Node.js",
+      "tech3": "Socket.io",
+      "tech4": "MongoDB"
+    },
+    "4": {
+      "title": "Peluquería Canina",
+      "description": "Sistema de gestión para peluquería de mascotas con agenda, historial de clientes y facturación.",
+      "tech1": "Java",
+      "tech2": "Swing",
+      "tech3": "MySQL",
+      "tech4": "JDBC"
+    },
+    "5": {
+      "title": "PypTech",
+      "description": "Sitio web corporativo para empresa de tecnología con catálogo de servicios y portafolio de proyectos."
+    },
+    "6": {
+      "title": "HuertoHogar Web",
+      "description": "Plataforma educativa sobre cultivo en casa con guías, consejos y seguimiento de plantas."
+    },
+    "7": {
+      "title": "Lashifield Web",
+      "description": "Sitio web para salón de belleza especializado en extensiones de pestañas y servicios estéticos."
+    },
+    "8": {
+      "title": "Misterr Pastel",
+      "description": "E-commerce de pastelería con catálogo de productos, carrito de compras y gestión de pedidos."
+    },
+    "9": {
+      "title": "Pastelería Mil Sabores",
+      "description": "Sitio web para pastelería con galería de productos, pedidos personalizados y reservas online."
+    },
+    "10": {
+      "title": "Mr Pastel App",
+      "description": "Aplicación móvil de pastelería para realizar pedidos, ver catálogo y recibir notificaciones de ofertas."
+    },
+    "11": {
+      "title": "LevelUp App",
+      "description": "Aplicación de gamificación para productividad personal con sistema de logros y seguimiento de hábitos."
+    }
+  },
+  "certificates": {
+    "bg_title": "Logros",
+    "title": "Mis Certificados",
+    "institution_label": "Institución",
+    "date_label": "Fecha",
+    "view_credential": "Ver Credencial",
+    "1": {
+      "title": "Bases de Datos Relacionales",
+      "institution": "TodoCode Academy",
+      "date": "2023"
+    },
+    "2": {
+      "title": "Introducción a Java",
+      "institution": "TodoCode Academy",
+      "date": "2023"
+    },
+    "3": {
+      "title": "Introducción a Algoritmos y Programación",
+      "institution": "TodoCode Academy",
+      "date": "2023"
+    },
+    "4": {
+      "title": "Desarrollo APIs Java + Spring Boot",
+      "institution": "TodoCode Academy",
+      "date": "2025"
+    },
+    "5": {
+      "title": "Arquitectura Microservicios + Spring Cloud",
+      "institution": "TodoCode Academy",
+      "date": "2025"
+    },
+    "6": {
+      "title": "Diseño Web",
+      "institution": "AIEP - Fundación Telefónica Movistar",
+      "date": "2022"
+    },
+    "7": {
+      "title": "Aprende WordPress de forma sencilla",
+      "institution": "AIEP - Fundación Telefónica Movistar",
+      "date": "09/10/2022"
+    },
+    "8": {
+      "title": "Programación Cooperativa 2",
+      "institution": "Egg Cooperation",
+      "date": "2023"
+    },
+    "9": {
+      "title": "Módulo",
+      "institution": "Duoc UC",
+      "date": "2026"
+    }
+  },
+  "blog": {
+    "bg_title": "Blog",
+    "title": "Últimas Entradas",
+    "read_more": "Leer Más",
+    "posts": {
+      "1": {
+        "day": "25",
+        "month": "Dic",
+        "title": "Inteligencia Artificial en Desarrollo: GitHub Copilot y más",
+        "description": "Cómo las herramientas de IA están cambiando la forma en que desarrollamos software, desde GitHub Copilot hasta ChatGPT para código."
+      },
+      "2": {
+        "day": "20",
+        "month": "Dic",
+        "title": "Spring Boot 3.3: Nuevas características y mejoras",
+        "description": "Descubre las últimas actualizaciones de Spring Boot 3.3 y cómo mejoran el desarrollo de aplicaciones Java empresariales."
+      },
+      "3": {
+        "day": "15",
+        "month": "Dic",
+        "title": "React 19: Las nuevas características que cambiarán el desarrollo frontend",
+        "description": "Explorando las nuevas características de React 19 y cómo mejoran el rendimiento y la experiencia del desarrollador."
+      }
+    }
+  },
+  "contact": {
+    "bg_title": "Contacto",
+    "title": "Contáctame",
+    "name_placeholder": "Nombre",
+    "email_placeholder": "Email",
+    "subject_placeholder": "Asunto",
+    "message_placeholder": "Mensaje",
+    "send_button": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success_message": "Tu mensaje ha sido enviado.",
+    "error_empty": "Por favor completa todos los campos.",
+    "error_email": "Por favor ingresa un email válido.",
+    "error_config": "EmailJS no está configurado. Por favor configura las credenciales en el archivo .env",
+    "error_generic": "Error al enviar el mensaje. Por favor verifica tu configuración de EmailJS o intenta más tarde."
+  },
+  "footer": {
+    "copyright": "© {year} Desarrollado con ❤️ por Hawk Durant"
+  }
+}

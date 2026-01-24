@@ -1,30 +1,28 @@
 import React from "react";
+import useTranslation from "../i18n/useTranslation";
 
 const Services = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: "fa-laptop",
-      title: "Diseño Web",
-      description:
-        "Primero lo primero. Diseño responsive. Prueba de navegador. Depuración completa. Tareas específicas y claras con el Equipo.",
+      title: t("services.web_design.title"),
+      description: t("services.web_design.description"),
     },
     {
       icon: "fa-laptop-code",
-      title: "Desarrollo Web",
-      description:
-        "Desarrollos ágiles. Scrum. Siempre las últimas tecnologías. Siempre pensando en el costo computacional. Servidores totalmente gestionados por nosotros.",
+      title: t("services.web_dev.title"),
+      description: t("services.web_dev.description"),
     },
     {
       icon: "fa-search",
-      title: "Arquitectura Web",
-      description:
-        "Diseño y estructuración de componentes de aplicación web, para su funcionamiento de manera eficiente, escalable y segura. Definición de las interacciones del cliente, servidor y otros servicios involucrados.",
+      title: t("services.architecture.title"),
+      description: t("services.architecture.description"),
     },
     {
       icon: "fa-cogs",
-      title: "Automatizaciones",
-      description:
-        "Optimización de procesos repetitivos mediante scripts y herramientas automatizadas. Integración de sistemas, flujos de trabajo automatizados y reducción de tareas manuales para mayor eficiencia.",
+      title: t("services.automation.title"),
+      description: t("services.automation.description"),
     },
   ];
 
@@ -39,13 +37,13 @@ const Services = () => {
               fontSize: "clamp(3rem, 10vw, 10rem)",
             }}
           >
-            Servicios
+            {t("services.bg_title")}
           </h1>
           <h1
             className="position-absolute text-uppercase text-primary"
             style={{ fontSize: "clamp(1.25rem, 3vw, 2.5rem)" }}
           >
-            Mis Servicios
+            {t("services.title")}
           </h1>
         </div>
         <div className="row pb-3">
