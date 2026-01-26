@@ -16,11 +16,6 @@ const Qualification = () => {
       period: t("qualification.education.2.period"),
     },
     {
-      title: t("qualification.education.3.title"),
-      institution: t("qualification.education.3.institution"),
-      period: t("qualification.education.3.period"),
-    },
-    {
       title: t("qualification.education.4.title"),
       institution: t("qualification.education.4.institution"),
       period: t("qualification.education.4.period"),

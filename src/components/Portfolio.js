@@ -65,7 +65,7 @@ const Portfolio = () => {
       description: t("portfolio.6.description"),
       technologies: ["React", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/James14k/Huerto-Hogar-React",
-      website: "https://example.com",
+      website: "https://tienda-huertohogar.netlify.app/",
     },
     {
       id: 7,
@@ -273,11 +273,17 @@ const Portfolio = () => {
                     {t("portfolio.view_github")}
                   </a>
                   <a
-                    href={selectedProject.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={selectedProject.id === 6 ? selectedProject.website : "#"}
+                    target={selectedProject.id === 6 ? "_blank" : undefined}
+                    rel={selectedProject.id === 6 ? "noopener noreferrer" : undefined}
                     className="btn btn-outline-primary"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (selectedProject.id !== 6) {
+                        e.preventDefault();
+                        alert("En mantención");
+                      }
+                    }}
                   >
                     <i className="fa fa-globe mr-2"></i>
                     {t("portfolio.view_website")}
