@@ -16,12 +16,12 @@
     "contact": "Contact",
     "download_cv": "Download CV"
   },
-  "cv_link": "https://drive.google.com/file/d/1u1wU_XkAmgirNymBu11JPyRZC1hfrd3j/view?usp=drive_link",
+  "cv_link": "https://drive.google.com/file/d/1HPCR6gWVi_oHIXRjwTPjIb5PFcr3oFxS/view?usp=drive_link",
   "about": {
     "bg_title": "About",
     "title": "Me",
-    "profession": "Software Engineer",
-    "description": "With a mention in software development. Specialist in the Java ecosystem, Spring Boot, and Kotlin. Expert in implementing monolithic, MVC, and microservices architectures, with a strong focus on testing (JUnit, MockK), Docker, and best development practices.",
+  "profession": "Computer Engineer",
+  "description": "Specialization in Backend Software Development Java | Spring Boot | Microservices | Docker | AWS. Java Backend Developer experienced in building REST APIs, authentication with Spring Security and JWT, microservices architecture and Full Stack applications with React. Experience in freelance projects using Spring Boot, MySQL, Docker and AWS. Interested in backend, cloud computing, automation and development best practices.",
     "hire_me": "Hire me"
   },
   "skills": {
@@ -55,9 +55,9 @@
     "experience_title": "Personal Projects",
     "education": {
       "1": {
-        "title": "Computer Engineer",
-        "institution": "Universidad Duoc Uc de Chile",
-        "period": "2022 - Current"
+  "title": "DUOC UC – Computer Engineering (In progress)",
+  "institution": "Santiago, Chile",
+  "period": "2023 – 2027 (Estimated graduation date)"
       },
       "2": {
         "title": "Online Course in Programming and Systems Analysis",
@@ -77,26 +77,31 @@
     },
     "experience": {
       "1": {
-        "position": "TuCrédito - Loan Management System",
-        "period": "Java 17 · Spring Boot 3.5 · React 18 · MySQL",
-        "description": "3-tier architecture with Repository, Service Layer, and DTO patterns. Implemented JWT authentication with Spring Security, 3 amortization systems (Personal, French, German), real-time KPI dashboard using Chart.js, and document storage with MinIO. Challenge: Managing complex financial calculations. Lesson: Importance of separation of concerns."
+        "position": "Freelance Developer – TuCrédito",
+        "period": "Santiago, Chile | January 2026 – March 2026",
+        "description": "Contributed to the development of reusable components and tools across the client's product portfolio, supporting technical standardization and faster feature delivery. Collaborated on implementing CI/CD practices to automate integration and deployment processes, reducing errors and improving delivery times. Supported web performance improvements through monitoring and creating dashboards in DataDog to track metrics and performance. Developed a cookie management tool used across products to comply with user consent regulations. Participated in technical optimization initiatives using GitHub Actions, CI process parallelization and exploring AWS solutions to improve efficiency and scalability."
       },
       "2": {
-        "position": "Zona Fit - Gym Management",
-        "period": "Java 21 · Spring Boot 4.0 · JPA · MySQL",
-        "description": "Desktop application with Swing UI and FlatLaf Darcula theme. Complete CRUD with unique membership validation. Spring Data JPA integration for persistence. Challenge: Synchronizing UI state with database. Lesson: Benefits of using ORM vs pure JDBC for maintainability."
+        "position": "Full Stack Freelance Developer – HuertoHogar Minimarket",
+        "period": "Osorno, Chile | June 2025 – August 2025",
+        "description": "Web platform focused on managing products, categories, stock, and sales for a minimarket. Built the frontend using React, Bootstrap 5, Axios and Context API, creating reusable components and consuming REST APIs. On the backend worked with Spring Boot 3.2.0 developing REST endpoints for authentication, user management and product administration. Implemented authentication and authorization using Spring Security and JWT to protect routes and control access. Used Spring Data JPA with MySQL and H2 for data persistence, CRUD operations and local testing. Integrated AI-supported features to automate order processes and optimize operational tasks. Used Git for version control and maintained a separated frontend/backend architecture for maintainability."
       },
       "3": {
+        "position": "Full Stack Freelance Developer – PypTech",
+        "period": "Mendoza, Argentina | February 2025 – April 2025",
+        "description": "Web platform focused on digitalization and management of business processes. Designed dynamic and responsive interfaces using React, Bootstrap 5 and Axios. Implemented global state management using Context API to optimize data handling between components. Developed REST APIs using Spring Boot for authentication, user management and data administration. Implemented secure authentication with Spring Security and JWT. Used Spring Data JPA with MySQL for persistence and data queries. Integrated AI-supported features to automate operational tasks and improve internal processes. Applied best development practices, Git, and separated frontend/backend architecture."
+      },
+      "4": {
         "position": "Chat App - Real-Time Messaging",
         "period": "Java · Spring WebSocket · Thymeleaf · H2",
         "description": "Bidirectional communication with Spring WebSocket and StompJS. Presence system with automatic join/leave notifications. Event-driven architecture for scalability. Challenge: Handling multi-user concurrency. Lesson: WebSocket protocols vs traditional polling."
       },
-      "4": {
+      "5": {
         "position": "Pet Grooming - Management System",
         "period": "Java · Swing · JPA · MySQL",
         "description": "Smart autocomplete with Timer and JPopupMenu. Duplicate prevention using queries with TRIM() and UPPER(). Sophisticated owner-pet relationship management with DAO and Observer patterns. Challenge: Edge cases in ownership changes. Lesson: Importance of robust validation and intuitive UX."
       },
-      "5": {
+      "6": {
         "position": "Digital Banking System - REST API",
         "period": "Java 17 · Spring Boot 3.5 · Spring Security · MySQL",
         "description": "Hexagonal Architecture (Ports & Adapters) with DDD. Implemented immutable Value Objects (ClienteId, CuentaId, Dinero, Moneda), JWT authentication, rate limiting with Bucket4j, PDF statement generation with OpenPDF, and multi-currency support with exchange rates. Swagger/OpenAPI for documentation. Challenge: Modeling complex banking domain with strict business rules. Lesson: Value of DDD for complex domains."

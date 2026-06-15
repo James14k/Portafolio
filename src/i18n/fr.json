@@ -16,12 +16,12 @@
     "contact": "Contact",
     "download_cv": "Télécharger le CV"
   },
-  "cv_link": "https://drive.google.com/file/d/1ajArS6MkIkff6AdI2loODZT5J7REeh1r/view?usp=drive_link",
+  "cv_link": "https://drive.google.com/file/d/1HPCR6gWVi_oHIXRjwTPjIb5PFcr3oFxS/view?usp=drive_link",
   "about": {
     "bg_title": "À propos",
     "title": "De moi",
-    "profession": "Ingénieur informatique",
-    "description": "Avec une spécialisation en développement logiciel. Spécialiste de l'écosystème Java, Spring Boot et Kotlin. Expert dans la mise en œuvre d'architectures monolithiques, MVC et microservices, avec un fort accent sur les tests (JUnit, MockK), Docker et les bonnes pratiques de développement.",
+    "profession": "Ingénieur en informatique",
+    "description": "Spécialisation en développement logiciel backend Java | Spring Boot | Microservices | Docker | AWS. Développeur backend Java expérimenté dans la création d'APIs REST, authentification avec Spring Security et JWT, architecture microservices et applications Full Stack avec React. Expérience dans des projets freelance utilisant Spring Boot, MySQL, Docker et AWS. Intéressé par le backend, le cloud computing, l'automatisation et les bonnes pratiques de développement.",
     "hire_me": "Embauchez-moi"
   },
   "skills": {
@@ -55,9 +55,9 @@
     "experience_title": "Projets Personnels",
     "education": {
       "1": {
-        "title": "Ingénieur en Informatique",
-        "institution": "Universidad Duoc Uc de Chile",
-        "period": "2022 - Actuel"
+        "title": "DUOC UC – Ingénierie Informatique (En cours)",
+        "institution": "Santiago, Chili",
+        "period": "2023 – 2027 (Date prévue de diplôme)"
       },
       "2": {
         "title": "Cours en ligne en Programmation et Analyse de Systèmes",
@@ -77,26 +77,31 @@
     },
     "experience": {
       "1": {
-        "position": "TuCrédito - Système de Prêts",
-        "period": "Java 17 · Spring Boot 3.5 · React 18 · MySQL",
-        "description": "Architecture 3 couches avec patterns Repository, Service Layer et DTO. Authentification JWT avec Spring Security, 3 systèmes d'amortissement (Personnel, Français, Allemand), tableau de bord KPI en temps réel avec Chart.js, stockage de documents avec MinIO. Défi: Gérer des calculs financiers complexes. Leçon: Importance de la séparation des responsabilités."
+        "position": "Développeur Freelance – TuCrédito",
+        "period": "Santiago, Chili | Janvier 2026 – Mars 2026",
+        "description": "Contribué au développement de composants et d'outils réutilisables pour différents produits du client, soutenant la normalisation technique et la livraison plus rapide des fonctionnalités. Collaboré à la mise en œuvre de pratiques CI/CD pour automatiser les processus d'intégration et de déploiement, réduisant les erreurs et améliorant les délais de livraison. Soutenu les améliorations de performance web via la surveillance et la création de tableaux de bord dans DataDog pour le suivi des métriques et des performances. Développé un outil de gestion des cookies utilisé dans plusieurs produits pour se conformer aux réglementations de consentement des utilisateurs. Participé à des initiatives d'optimisation technique utilisant GitHub Actions, la parallélisation des processus CI et l'exploration de solutions AWS pour améliorer l'efficacité et la scalabilité."
       },
       "2": {
-        "position": "Zona Fit - Gestion de Salle de Sport",
-        "period": "Java 21 · Spring Boot 4.0 · JPA · MySQL",
-        "description": "Application de bureau avec Swing UI et thème FlatLaf Darcula. CRUD complet avec validation d'abonnements uniques. Intégration Spring Data JPA pour la persistance. Défi: Synchroniser l'état de l'UI avec la base de données. Leçon: Avantages de l'ORM vs JDBC pur pour la maintenabilité."
+        "position": "Développeur Full Stack Freelance – HuertoHogar Minimarket",
+        "period": "Osorno, Chili | Juin 2025 – Août 2025",
+        "description": "Plateforme web axée sur la gestion des produits, catégories, stocks et ventes pour un minimarket. Développé le frontend en React, Bootstrap 5, Axios et Context API, créant des composants réutilisables et consommant des API REST. Sur le backend, travaillé avec Spring Boot 3.2.0 pour développer des endpoints REST pour l'authentification, la gestion des utilisateurs et l'administration des produits. Implémenté l'authentification et l'autorisation avec Spring Security et JWT pour protéger les routes et contrôler les accès. Utilisé Spring Data JPA avec MySQL et H2 pour la persistance des données, opérations CRUD et tests locaux. Intégré des fonctionnalités assistées par IA pour automatiser les processus de commande et optimiser les tâches opérationnelles. Utilisé Git pour le contrôle de version et maintenu une architecture frontend/backend séparée pour la maintenabilité."
       },
       "3": {
+        "position": "Développeur Full Stack Freelance – PypTech",
+        "period": "Mendoza, Argentine | Février 2025 – Avril 2025",
+        "description": "Plateforme web axée sur la numérisation et la gestion des processus métier. Conçu des interfaces dynamiques et responsives avec React, Bootstrap 5 et Axios. Implémenté la gestion d'état globale via Context API pour optimiser le traitement des données entre composants. Développé des API REST avec Spring Boot pour l'authentification, la gestion des utilisateurs et l'administration des données. Implémenté une authentification sécurisée avec Spring Security et JWT. Utilisé Spring Data JPA avec MySQL pour la persistance et les requêtes. Intégré des fonctionnalités assistées par IA pour automatiser les tâches opérationnelles et améliorer les processus internes. Appliqué les bonnes pratiques de développement, Git et une architecture séparée frontend/backend."
+      },
+      "4": {
         "position": "Chat App - Messagerie en Temps Réel",
         "period": "Java · Spring WebSocket · Thymeleaf · H2",
         "description": "Communication bidirectionnelle avec Spring WebSocket et StompJS. Système de présence avec notifications automatiques d'entrée/sortie. Architecture événementielle pour la scalabilité. Défi: Gérer la concurrence multi-utilisateurs. Leçon: Protocoles WebSocket vs polling traditionnel."
       },
-      "4": {
+      "5": {
         "position": "Toilettage Canin - Système de Gestion",
         "period": "Java · Swing · JPA · MySQL",
         "description": "Auto-complétion intelligente avec Timer et JPopupMenu. Prévention des doublons via requêtes avec TRIM() et UPPER(). Gestion sophistiquée des relations propriétaire-animal avec patterns DAO et Observer. Défi: Cas limites dans les changements de propriétaire. Leçon: Importance de la validation robuste et UX intuitive."
       },
-      "5": {
+      "6": {
         "position": "Système Bancaire Digital - API REST",
         "period": "Java 17 · Spring Boot 3.5 · Spring Security · MySQL",
         "description": "Architecture Hexagonale (Ports & Adapters) avec DDD. Implémentation de Value Objects immuables (ClienteId, CuentaId, Dinero, Moneda), authentification JWT, rate limiting avec Bucket4j, génération d'extraits PDF avec OpenPDF, et support multi-devises avec taux de change. Swagger/OpenAPI pour documentation. Défi: Modéliser un domaine bancaire complexe avec règles métier strictes. Leçon: Valeur du DDD pour domaines complexes."

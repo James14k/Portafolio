@@ -39,7 +39,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Definir navLinks dentro del render para que use t() dinámicamente
   const navLinks = [
     { id: "home", label: t("navbar.home") },
     { id: "about", label: t("navbar.about") },
